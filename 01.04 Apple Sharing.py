@@ -1,0 +1,6 @@
+n=input("Enter Number of Students: ")
+k=input("Enter Number of Apples: ")
+applesperstudent = int(k) // int(n)
+print (applesperstudent)
+applesinbasket = int(k) % int(n)
+print (applesinbasket)

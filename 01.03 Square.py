@@ -1,3 +1,3 @@
 x = input("Enter Number: ")
-sum = int(x) * int(x)
+sum = float(x) * float(x)
 print (sum)
