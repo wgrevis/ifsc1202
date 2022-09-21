@@ -1,6 +1,8 @@
 a = int(input ("Enter A: "))
 b = int(input ("Enter B: "))
-v = (a , b)
-for i in range(2, v//2 + 1):
-    if v % i == 0:
-        print("Number")
+for i in range(2, a//2 + 1):
+    if a % i == 0:
+        print()
+for i in range(2, b//2 + 1 ):
+    if b % i == 0:
+        print()

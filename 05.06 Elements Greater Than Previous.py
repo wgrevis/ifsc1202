@@ -1,4 +1,7 @@
+x = int(input ("Enter a Number (zero to quit): "))
+counter = 0
 while x != 0:
+    if x > HELP HERE : 
+        counter = counter + 1
     x = int(input ("Enter a Number (zero to quit): "))
-    if x > previous: 
-        print(yes)
+print("Number of Values Greater Than the Previous: ",counter)
