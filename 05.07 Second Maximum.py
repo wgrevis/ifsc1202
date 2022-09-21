@@ -8,6 +8,6 @@ while y != 0:
     y = int(input ("Enter a Number (zero to quit): "))
     if z > maximum2:
         maximum2 = z
-    z = int(input ("Enter a Number (zero to quit): "))
+    y = int(input ("Enter a Number (zero to quit): "))
 print("First Maximum: ", maximum)
 print("Second Maximum: ", maximum2)
