@@ -11,8 +11,8 @@ while x != 0 :
     if x < minimum:
         minimum = x
     x = float(input ("Enter a Number (zero to quit): "))
-print("Count: ", counter)
-print("Sum: ", sum)
+print("Count:   ", counter)
+print("Sum:     ", sum)
 print("Average: ", sum/counter)
 print("Minimum: ", minimum)
 print("Maximum: ", maximum)
