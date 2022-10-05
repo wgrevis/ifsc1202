@@ -1,14 +1,22 @@
-fileToRead="06.04 EmptyLinesInput.txt"
-fileToWrite="06.04 EmptyLinesOutput.txt"
-line=open(fileToWrite,"w")
+fileToRead= open("06.04 EmptyLinesInput.txt","r") 
+fileToWrite= open("06.04 EmptyLinesOutput.txt","a")
+
 readCount=0
 writeCount=0
-with open(fileToRead,"r") as f:
-    for line in f:
-        readCount = readCount + 1
-        if line.strip():
-            writeCount = writeCount + 1
-fout.write(line)
-fout.close()
-print(readCount,'records read')
-print(writeCount,'records written')
+
+line = fileToRead.readline()
+
+while line != "":
+    readCount = readCount + 1
+
+    if line.strip():
+        fileToWrite.write(line)
+        writeCount = writeCount + 1
+
+    line = fileToRead.readline()
+
+fileToRead.close()
+fileToWrite.close()
+
+print(readCount,"records read")
+print(writeCount,"records written")
