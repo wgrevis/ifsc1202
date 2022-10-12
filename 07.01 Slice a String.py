@@ -1,0 +1,8 @@
+x = input("Enter a string: ")
+print(x[2])
+print(x[-2])
+print(x[0:5])
+print(x[0:])
+print(x[0:])
+print(x.reverse)
+print(len(x))
