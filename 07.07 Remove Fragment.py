@@ -1,5 +1,5 @@
-t = str(input("Enter the string: "))
-if t.count("h") >= 2:
-# fix this here
-# else:
-# print(t.count("h")
+x = (input("Enter the string: "))
+firsth = x.find("h")
+lasth = x.rfind("h")
+inside = x[firsth:lasth+1]
+print(x.replace(inside, ""))

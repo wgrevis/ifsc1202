@@ -1,4 +1,7 @@
 x = input("Enter a string: ")
-beforeh
-betweenh
-afterh
+
+firsth = x.find("h")
+lasth = x.rfind("h")
+inside = x[firsth:lasth+1]
+
+print(x.replace(inside, inside[::-1]))
