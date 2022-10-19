@@ -1,12 +1,18 @@
 s = input("Enter Values Separated by Spaces: ")
-lst = []
-for x in s.split(" "):
-    lst.append(int(x))
-i = 0
-while i<len(lst):
-    if(i+1<len(lst)):
-        lst[i], lst[i+1] = lst[i+1], lst[i]
-    i = i + 2
-print("Swapped Values: ",end="")
-for x in lst:
-    print(x,end=" ")
+nums = s.split()
+
+for i in range(0, len(nums)):
+    nums[i] = int(nums[i])
+
+for i in range(0, len(nums), 2):
+    if(i + 1 < len(nums)):
+        temp = nums[i]
+        nums[i] = nums[i + 1]
+        nums[i + 1] = temp
+
+print("Swapped Values: ", end="")
+
+for i in range(0, len(nums)):
+    print(nums[i], end=" ")
+
+print()
