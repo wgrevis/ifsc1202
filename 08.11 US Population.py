@@ -44,6 +44,6 @@ for i in range(0, len(listUSPopulation)):
         maxChange = change
         avgChange = change
 print()
-print("Average Change = {}".format(round(avgChange / len(listUSPopulation), 1)))
+print("Average Change = {}".format(round(avgChange / (len(listUSPopulation) - 1), 1)))
 print("Minimum Change = {} ({})".format(minChange, minChangeYear))
 print("Maximum Change = {} ({})".format(maxChange, maxChangeYear))
